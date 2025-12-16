@@ -1,4 +1,4 @@
-# Tiny Blog
+# (╹ᴥ╹) Tiny Blog
 
 A minimal static blog generator. No dependencies, just Python.
 
