@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Blog</title>
+    <style>
+:root {
+    --width: 720px;
+    --font-main: Verdana, sans-serif;
+    --font-secondary: Verdana, sans-serif;
+    --font-scale: 1em;
+    --background-color: #fff;
+    --heading-color: #222;
+    --text-color: #444;
+    --link-color: #3273dc;
+    --visited-color: #8b6fcb;
+    --code-background-color: #f2f2f2;
+    --code-color: #222;
+    --blockquote-color: #222;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --background-color: #01242e;
+        --heading-color: #eee;
+        --text-color: #ddd;
+        --link-color: #8cc2dd;
+        --visited-color: #8b6fcb;
+        --code-background-color: #000;
+        --code-color: #ddd;
+        --blockquote-color: #ccc;
+    }
+}
+
+body {
+    font-family: var(--font-secondary);
+    font-size: var(--font-scale);
+    margin: auto;
+    padding: 20px;
+    max-width: var(--width);
+    text-align: left;
+    background-color: var(--background-color);
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    line-height: 1.5;
+    color: var(--text-color);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-main);
+    color: var(--heading-color);
+}
+
+a {
+    color: var(--link-color);
+    cursor: pointer;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:visited {
+    color: var(--visited-color);
+}
+
+nav a {
+    margin-right: 10px;
+}
+
+strong, b {
+    color: var(--heading-color);
+}
+
+main {
+    line-height: 1.6;
+}
+
+hr {
+    border: 0;
+    border-top: 1px dashed;
+}
+
+img {
+    max-width: 100%;
+}
+
+code {
+    font-family: monospace;
+    padding: 2px 4px;
+    background-color: var(--code-background-color);
+    color: var(--code-color);
+    border-radius: 3px;
+}
+
+pre {
+    background-color: var(--code-background-color);
+    padding: 1em;
+    border-radius: 3px;
+    overflow-x: auto;
+}
+
+pre code {
+    padding: 0;
+    background: none;
+}
+
+blockquote {
+    border-left: 3px solid #999;
+    color: var(--blockquote-color);
+    padding-left: 20px;
+    margin-left: 0;
+    font-style: italic;
+}
+
+footer {
+    padding: 25px 0;
+    text-align: center;
+    color: #777;
+    font-size: 0.9em;
+}
+
+.title {
+    display: inline-block;
+}
+
+.title:hover {
+    text-decoration: none;
+}
+
+.title h1 {
+    font-size: 1.5em;
+    margin-bottom: 0;
+}
+
+.logo {
+    font-family: "Menlo", monospace;
+}
+
+/* Post list */
+ul.blog-posts {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul.blog-posts li {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+ul.blog-posts li span {
+    flex: 0 0 130px;
+    font-family: monospace;
+    font-size: 14px;
+    color: #777;
+}
+
+ul.blog-posts li a:visited {
+    color: var(--visited-color);
+}
+
+/* Article */
+article {
+    margin-top: 20px;
+}
+
+article header {
+    margin-bottom: 30px;
+}
+
+article header h1 {
+    margin-bottom: 5px;
+}
+
+article header time {
+    font-family: monospace;
+    font-size: 14px;
+    color: #777;
+}
+
+.back-link {
+    margin-top: 30px;
+    display: block;
+}
+
+mark {
+    background-color: #fff3cd;
+    padding: 2px 4px;
+    border-radius: 3px;
+}
+
+@media (prefers-color-scheme: dark) {
+    mark {
+        background-color: #664d03;
+        color: #fff3cd;
+    }
+}
+</style>
+</head>
+<body>
+    <header>
+        <a class="title" href="/">
+            <h1><span class="logo">(╹ᴥ╹)</span> My Blog</h1>
+        </a>
+        
+    </header>
+    <main>
+        
+    <h2>A minimal, no-nonsense blog</h2>
+    <p>Welcome to my blog.</p>
+    <h3>Posts</h3>
+    <ul class="blog-posts">
+        <li>
+            <span>2025-01-15</span>
+            <a href="/hello-world.html">Hello World</a>
+        </li></ul>
+    
+    </main>
+    <footer>
+        <p>Style inspired by <a href="https://bearblog.dev">Bear Blog</a></p>
+    </footer>
+</body>
+</html>
